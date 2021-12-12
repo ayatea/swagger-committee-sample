@@ -31,6 +31,9 @@ gem 'bootsnap', '>= 1.4.4', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # Use Swagger
+  gem 'rswag-api'
+  gem 'rswag-ui'
 end
 
 group :development do
@@ -42,9 +45,6 @@ group :development do
   gem 'listen', '~> 3.3'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  # Use Swagger
-  gem 'rswag-api'
-  gem 'rswag-ui'
 end
 
 group :test do
