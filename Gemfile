@@ -57,6 +57,9 @@ group :test do
   gem 'rspec-rails'
   # Use Swaggerize
   gem 'rswag-specs'
+  # Use Committee
+  gem 'committee-rails'
+  gem 'committee'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
