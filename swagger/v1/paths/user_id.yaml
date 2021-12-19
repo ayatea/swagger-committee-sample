@@ -1,0 +1,17 @@
+paths:
+  /users/{id}:
+    get:
+      parameters:
+        - name: id
+          in: path
+          description: ユーザー名
+          required: true
+          schema:
+            type: integer 
+      responses:
+        200:
+          description: return User info
+          content:
+            application/json:
+              schema:
+                $ref: "../components/user.yaml#/components/schemas/User"
